@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>pwd</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/pictures/startpage.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="/index.html" class="w3-bar-item w3-button">Home</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="/over-de-club.html" class="w3-bar-item w3-button">Over de club</a>
+      <a href="/trainers.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Trainers</a>
+      <a href="/trainingsrooster.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i>Trainingsrooster</a>
+      <a href="/contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="/over-de-club.html" onclick="w3_close()" class="w3-bar-item w3-button">Over de club</a>
+  <a href="/trainers.html" onclick="w3_close()" class="w3-bar-item w3-button">Trainers</a>
+  <a href="/trainingsrooster.html" onclick="w3_close()" class="w3-bar-item w3-button">trainingsrooster</a>
+  <a href="/contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<div class="w3-container" style="padding:128px 16px" id="home">
+  <h3 class="w3-center">De trainers</h3>
+  <p class="w3-center w3-large">Onze toegewijde trainers zijn ervaren mentoren die met passie, geduld en expertise onze leden begeleiden op hun reis door de wereld van Taekwondo.</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="pictures/amber.jpg" alt="Amber" style="width:100%">
+        <div class="w3-container">
+          <h3>Amber</h3>
+          <p class="w3-opacity">Sparring, competitie en algemeen</p>
+          <p>""Ik wil dat in onze club elk kind op zijn/haar niveau kan ontwikkelen. Zowel op sportief als op persoonlijk vlak. Zich kan ontplooien tot de beste versie van zichzelf. Inzetten op hun sterktes en werken aan hun zwaktes"" </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="pictures/alida.jpg" alt="Alida" style="width:100%">
+        <div class="w3-container">
+          <h3>Alida</h3>
+          <p class="w3-opacity">Sparring, competitie en algemeen</p>
+          <p>"Onze club staat voor mij voor gelijkheid, eerlijkheid, begrip en uitdaging. Ieder kind moet een veilige plaats hebben om zich te kunnen ontwikkelen en zijn/haar grenzen te ontdekken."  </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="pictures/sem.jpg" alt="Sem" style="width:100%">
+        <div class="w3-container">
+          <h3>Sem</h3>
+          <p class="w3-opacity">Conditie en poomsea</p>
+          <p>"Met een sterke nadruk op fysieke uitdagingen streven we ernaar onze leden te inspireren en te motiveren om hun grenzen te verleggen. Bij ons gaat het zowel over lichamelijke inspanning, als over de structuur die essentieel is voor het behalen van individuele doelen, zowel op vlak van sparring als poomsea"</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="pictures/robin.jpg" alt="Robin" style="width:100%">
+        <div class="w3-container">
+          <h3>Robin</h3>
+          <p class="w3-opacity">Algemeen</p>
+          <p>"Wij staan voor het trainen van technische vaardigheden in een gezellige omgeving. We geloven in het creëren van een sfeer waarin leden hun vaardigheden kunnen ontwikkelen, zonder drempels of belemmeringen. Bij ons draait het om plezier, technische expertise en een open deur voor iedereen die wil deelnemen."</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="pictures/ellen.jpg" alt="Sem" style="width:100%">
+        <div class="w3-container">
+          <h3>Ellen</h3>
+          <p class="w3-opacity">Conditie en poomsea</p>
+          <p>"In onze club nemen we het niet tegen elkaar op om de beste te zijn. Winnen staat voor ons voor:</p>
+          <p>niet opgeven, blijven proberen en zo je techniek verbeteren</p>
+          <p>Winnen op een wedstrijd = bijleren, ook al heb je 'verloren'</p>
+          <p>zorgen dat je de rest rond je beter maakt, door een goeie partner en vriend te zijn.</p>
+          <p>Kortom, winnen doen we door steeds een betere versie van onszelf te worden, op ons eigen tempo, met elkaar."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey">
+    <i class="fa fa-arrow-up w3-margin-right"></i>
+    To the top
+  </a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/taekwondodiepenbeek/" target="_blank" class="fa fa-facebook-official w3-hover-opacity"></a>
+    <a href="https://www.instagram.com/taekwondodiepenbeek/" target="_blank" class="fa fa-instagram w3-hover-opacity"></a>
+  </div>
+  <p>Powered by <a href="/" title="PWD" target="_blank" class="w3-hover-text-green">PWD</a></p>
+</footer>
+ 
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
